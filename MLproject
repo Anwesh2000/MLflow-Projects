@@ -1,0 +1,9 @@
+name: MLflow
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+        neighbors: {type: int, default: 2}
+    command: "python example.py {neighbors}"
